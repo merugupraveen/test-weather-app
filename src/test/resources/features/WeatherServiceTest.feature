@@ -11,6 +11,7 @@ Feature: Weather Service
       | temperature | feelsLike | humidity | pressure | description   | icon |
       | 15.5        | 14.2      | 72.0     | 1013.25  | Partly cloudy | 02d  |
 
+
   Scenario: Get or create existing location
     Given a location "London" with country "GB" exists in the database
     When I request to get or create location "London", "GB", 51.5074, -0.1278
